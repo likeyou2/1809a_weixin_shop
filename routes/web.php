@@ -24,4 +24,6 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 //微信JSSDK
-Route::get('/weixin/sdk/jsSdk','Sdk/SdkController@jsSdk');
+Route::get('/weixin/sdk/jsSdk','Sdk\SdkController@jsSdk');
+
+//商品视图页面
