@@ -26,4 +26,8 @@ Route::get('/home', 'HomeController@index')->name('home');
 //微信JSSDK
 Route::get('/weixin/sdk/jsSdk','Sdk\SdkController@jsSdk');
 
-//商品视图页面
+//获取access_token
+Route::get('/access','VX\VXController@getAccessToken');
+
+//临时二维码带参数
+Route::get('/ticket','VX\VXController@ticket');
